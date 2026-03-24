@@ -5,6 +5,7 @@
 !*.py
 !*.sh
 !*.html
+!*.png
 !.gitignore
 
 # Optional: Do not ignore directories (needed to find files inside folders)
