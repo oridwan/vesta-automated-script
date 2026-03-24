@@ -1,0 +1,2009 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Structure Report</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --paper: #fffdf9;
+      --ink: #1f2421;
+      --muted: #5b645e;
+      --line: #d7d2c8;
+      --panel: #f8f6f1;
+      --accent: #264653;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, #fdf8ee 0, transparent 28rem),
+        linear-gradient(180deg, #f2eee6 0%, #ece7de 100%);
+    }
+    main {
+      width: min(1600px, calc(100vw - 32px));
+      margin: 24px auto 48px;
+    }
+    header {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 12px 30px rgba(38, 70, 83, 0.08);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2.1rem;
+      color: var(--accent);
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .structure {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    }
+    .structure h2 {
+      margin: 0 0 16px;
+      font-size: 1.65rem;
+    }
+    .structure-meta {
+      margin-bottom: 16px;
+      padding: 14px 16px;
+      background: #fcfaf6;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .meta-list {
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .meta-list div {
+      min-width: 0;
+    }
+    .meta-list dt {
+      margin: 0 0 4px;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .meta-list dd {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--ink);
+      font-weight: 600;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+    .left-panel, .right-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+    }
+    h3 {
+      margin: 0 0 14px;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    figure {
+      margin: 0;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 10px;
+    }
+    figcaption {
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      background: #ffffff;
+    }
+    .missing-box {
+      min-height: 260px;
+      display: grid;
+      place-items: center;
+      border: 1px dashed var(--line);
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding: 18px;
+      background: #fcfaf6;
+    }
+    .right-panel {
+      display: grid;
+      gap: 14px;
+    }
+    @media (max-width: 1100px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 800px) {
+      main {
+        width: min(100vw - 18px, 1000px);
+        margin: 10px auto 24px;
+      }
+      header, .structure {
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .meta-list {
+        grid-template-columns: 1fr;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Structure Report</h1>
+      <p>61 structures included</p>
+    </header>
+    
+<section class="structure">
+  <h2>Cs1K3B2H9_s016_SPG-156_E-hull_-0.033</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.033 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.033282 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs1K3B2H9_s016_SPG-156_E-hull_-0.033/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs1K3B2H9_s016_SPG-156_E-hull_-0.033/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs1K3B2H9_s016_SPG-156_E-hull_-0.033/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs1K3B2H9_s016_SPG-156_E-hull_-0.033/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs1K3B2H9_s016_SPG-156_E-hull_-0.033/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs1K3B2H9_s016_SPG-156_E-hull_-0.033/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs1K3B2H9_s016_SPG-156_E-hull_-0.033/plots/Cs1K3B2H9_s016_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs1K3B2H9_s016_SPG-156_E-hull_-0.033/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>115</dd></div>
+        <div><dt>E above hull</dt><dd>-0.028 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.043977 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028/plots/Cs1Rb1B1H4_s009_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs1Rb1B1H4_s009_SPG-115_E-hull_-0.028/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>26</dd></div>
+        <div><dt>E above hull</dt><dd>-0.022 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.034152 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022/plots/Cs1Rb2B1H5_s021_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs1Rb2B1H5_s021_SPG-26_E-hull_-0.022/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs2K1B2H8_s001_SPG-156_E-hull_-0.023</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.023 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.242053 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs2K1B2H8_s001_SPG-156_E-hull_-0.023/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs2K1B2H8_s001_SPG-156_E-hull_-0.023/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs2K1B2H8_s001_SPG-156_E-hull_-0.023/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs2K1B2H8_s001_SPG-156_E-hull_-0.023/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs2K1B2H8_s001_SPG-156_E-hull_-0.023/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs2K1B2H8_s001_SPG-156_E-hull_-0.023/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs2K1B2H8_s001_SPG-156_E-hull_-0.023/plots/Cs2K1B2H8_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs2K1B2H8_s001_SPG-156_E-hull_-0.023/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs2K1B2H8_s003_SPG-164_E-hull_-0.011</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>164</dd></div>
+        <div><dt>E above hull</dt><dd>-0.011 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.000001 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs2K1B2H8_s003_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs2K1B2H8_s003_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs2K1B2H8_s003_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs2K1B2H8_s003_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs2K1B2H8_s003_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs2K1B2H8_s003_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs2K1B2H8_s003_SPG-164_E-hull_-0.011/plots/Cs2K1B2H8_s003_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs2K1B2H8_s003_SPG-164_E-hull_-0.011/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs2K2B2H9_s014_SPG-156_E-hull_-0.032</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.032 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-5.323428 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs2K2B2H9_s014_SPG-156_E-hull_-0.032/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs2K2B2H9_s014_SPG-156_E-hull_-0.032/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs2K2B2H9_s014_SPG-156_E-hull_-0.032/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs2K2B2H9_s014_SPG-156_E-hull_-0.032/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs2K2B2H9_s014_SPG-156_E-hull_-0.032/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs2K2B2H9_s014_SPG-156_E-hull_-0.032/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs2K2B2H9_s014_SPG-156_E-hull_-0.032/plots/Cs2K2B2H9_s014_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs2K2B2H9_s014_SPG-156_E-hull_-0.032/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.004 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-6.537174 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004/plots/Cs2Na1B1H5_s010_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs2Na1B1H5_s010_SPG-160_E-hull_-0.004/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>25</dd></div>
+        <div><dt>E above hull</dt><dd>-0.010 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-4.242682 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010/plots/Cs2Rb1B1H5_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs2Rb1B1H5_s001_SPG-25_E-hull_-0.010/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.022 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.267232 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022/plots/Cs2Rb1B2H8_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs2Rb1B2H8_s001_SPG-156_E-hull_-0.022/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs2Rb1B2H8_s007_SPG-160_E-hull_-0.019</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.019 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>Missing</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs2Rb1B2H8_s007_SPG-160_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs2Rb1B2H8_s007_SPG-160_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs2Rb1B2H8_s007_SPG-160_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs2Rb1B2H8_s007_SPG-160_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs2Rb1B2H8_s007_SPG-160_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs2Rb1B2H8_s007_SPG-160_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs2Rb1B2H8_s007_SPG-160_E-hull_-0.019/plots/Cs2Rb1B2H8_s007_band_dos.png" alt="Band DOS"></figure>
+      <figure class="missing"><figcaption>Phonon Band DOS</figcaption><div class="missing-box">Missing phonon_band_dos.png in plots/</div></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.028 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-2.720078 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028/plots/Cs2Rb2B3H12_s006_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs2Rb2B3H12_s006_SPG-38_E-hull_-0.028/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs3Na1B3H12_s015_SPG-38_E-hull_-0.019</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.019 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.311512 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs3Na1B3H12_s015_SPG-38_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs3Na1B3H12_s015_SPG-38_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs3Na1B3H12_s015_SPG-38_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs3Na1B3H12_s015_SPG-38_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs3Na1B3H12_s015_SPG-38_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs3Na1B3H12_s015_SPG-38_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure class="missing"><figcaption>Band DOS</figcaption><div class="missing-box">Missing band_dos image in plots/</div></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs3Na1B3H12_s015_SPG-38_E-hull_-0.019/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>47</dd></div>
+        <div><dt>E above hull</dt><dd>-0.001 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-17.223369 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001/plots/Cs3Na2B2H10_s004_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs3Na2B2H10_s004_SPG-47_E-hull_-0.001/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs3Rb1B3H12_s019_SPG-160_E-hull_-0.015</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.015 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>Missing</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs3Rb1B3H12_s019_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs3Rb1B3H12_s019_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs3Rb1B3H12_s019_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs3Rb1B3H12_s019_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs3Rb1B3H12_s019_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs3Rb1B3H12_s019_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure class="missing"><figcaption>Band DOS</figcaption><div class="missing-box">Missing band_dos image in plots/</div></figure>
+      <figure class="missing"><figcaption>Phonon Band DOS</figcaption><div class="missing-box">Missing phonon_band_dos.png in plots/</div></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.029 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.019761 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029/plots/Cs6Li1B1H9_s009_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Cs6Li1B1H9_s009_SPG-38_E-hull_-0.029/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K1Cs1B1H4_s033_SPG-31_E-hull_-0.025</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>31</dd></div>
+        <div><dt>E above hull</dt><dd>-0.025 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.023971 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K1Cs1B1H4_s033_SPG-31_E-hull_-0.025/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K1Cs1B1H4_s033_SPG-31_E-hull_-0.025/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K1Cs1B1H4_s033_SPG-31_E-hull_-0.025/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K1Cs1B1H4_s033_SPG-31_E-hull_-0.025/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K1Cs1B1H4_s033_SPG-31_E-hull_-0.025/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K1Cs1B1H4_s033_SPG-31_E-hull_-0.025/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K1Cs1B1H4_s033_SPG-31_E-hull_-0.025/plots/K1Cs1B1H4_s033_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K1Cs1B1H4_s033_SPG-31_E-hull_-0.025/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K1Rb2B2H8_s001_SPG-156_E-hull_-0.018</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.018 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.269287 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K1Rb2B2H8_s001_SPG-156_E-hull_-0.018/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K1Rb2B2H8_s001_SPG-156_E-hull_-0.018/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K1Rb2B2H8_s001_SPG-156_E-hull_-0.018/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K1Rb2B2H8_s001_SPG-156_E-hull_-0.018/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K1Rb2B2H8_s001_SPG-156_E-hull_-0.018/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K1Rb2B2H8_s001_SPG-156_E-hull_-0.018/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K1Rb2B2H8_s001_SPG-156_E-hull_-0.018/plots/K1Rb2B2H8_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K1Rb2B2H8_s001_SPG-156_E-hull_-0.018/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K1Rb2B2H8_s004_SPG-164_E-hull_-0.011</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>164</dd></div>
+        <div><dt>E above hull</dt><dd>-0.011 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.725164 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K1Rb2B2H8_s004_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K1Rb2B2H8_s004_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K1Rb2B2H8_s004_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K1Rb2B2H8_s004_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K1Rb2B2H8_s004_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K1Rb2B2H8_s004_SPG-164_E-hull_-0.011/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K1Rb2B2H8_s004_SPG-164_E-hull_-0.011/plots/K1Rb2B2H8_s004_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K1Rb2B2H8_s004_SPG-164_E-hull_-0.011/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K1Rb3B2H9_s026_SPG-156_E-hull_-0.021</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.021 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.016542 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K1Rb3B2H9_s026_SPG-156_E-hull_-0.021/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K1Rb3B2H9_s026_SPG-156_E-hull_-0.021/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K1Rb3B2H9_s026_SPG-156_E-hull_-0.021/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K1Rb3B2H9_s026_SPG-156_E-hull_-0.021/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K1Rb3B2H9_s026_SPG-156_E-hull_-0.021/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K1Rb3B2H9_s026_SPG-156_E-hull_-0.021/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K1Rb3B2H9_s026_SPG-156_E-hull_-0.021/plots/K1Rb3B2H9_s026_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K1Rb3B2H9_s026_SPG-156_E-hull_-0.021/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K1Sr1B2H8_s014_SPG-160_E-hull_-0.052</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.052 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-8.566044 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K1Sr1B2H8_s014_SPG-160_E-hull_-0.052/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K1Sr1B2H8_s014_SPG-160_E-hull_-0.052/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K1Sr1B2H8_s014_SPG-160_E-hull_-0.052/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K1Sr1B2H8_s014_SPG-160_E-hull_-0.052/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K1Sr1B2H8_s014_SPG-160_E-hull_-0.052/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K1Sr1B2H8_s014_SPG-160_E-hull_-0.052/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K1Sr1B2H8_s014_SPG-160_E-hull_-0.052/plots/K1Sr1B2H8_s014_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K1Sr1B2H8_s014_SPG-160_E-hull_-0.052/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K2Cs1B1H5_s008_SPG-156_E-hull_-0.005</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.005 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-2.865567 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K2Cs1B1H5_s008_SPG-156_E-hull_-0.005/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K2Cs1B1H5_s008_SPG-156_E-hull_-0.005/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K2Cs1B1H5_s008_SPG-156_E-hull_-0.005/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K2Cs1B1H5_s008_SPG-156_E-hull_-0.005/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K2Cs1B1H5_s008_SPG-156_E-hull_-0.005/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K2Cs1B1H5_s008_SPG-156_E-hull_-0.005/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K2Cs1B1H5_s008_SPG-156_E-hull_-0.005/plots/K2Cs1B1H5_s008_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K2Cs1B1H5_s008_SPG-156_E-hull_-0.005/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K2Cs1B2H8_s012_SPG-164_E-hull_-0.040</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>164</dd></div>
+        <div><dt>E above hull</dt><dd>-0.040 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-2.317292 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K2Cs1B2H8_s012_SPG-164_E-hull_-0.040/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K2Cs1B2H8_s012_SPG-164_E-hull_-0.040/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K2Cs1B2H8_s012_SPG-164_E-hull_-0.040/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K2Cs1B2H8_s012_SPG-164_E-hull_-0.040/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K2Cs1B2H8_s012_SPG-164_E-hull_-0.040/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K2Cs1B2H8_s012_SPG-164_E-hull_-0.040/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K2Cs1B2H8_s012_SPG-164_E-hull_-0.040/plots/K2Cs1B2H8_s012_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K2Cs1B2H8_s012_SPG-164_E-hull_-0.040/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K2Rb1B2H8_s003_SPG-156_E-hull_-0.010</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.010 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.773321 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K2Rb1B2H8_s003_SPG-156_E-hull_-0.010/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K2Rb1B2H8_s003_SPG-156_E-hull_-0.010/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K2Rb1B2H8_s003_SPG-156_E-hull_-0.010/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K2Rb1B2H8_s003_SPG-156_E-hull_-0.010/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K2Rb1B2H8_s003_SPG-156_E-hull_-0.010/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K2Rb1B2H8_s003_SPG-156_E-hull_-0.010/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K2Rb1B2H8_s003_SPG-156_E-hull_-0.010/plots/K2Rb1B2H8_s003_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K2Rb1B2H8_s003_SPG-156_E-hull_-0.010/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K2Rb2B2H9_s030_SPG-156_E-hull_-0.016</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.016 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.108574 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K2Rb2B2H9_s030_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K2Rb2B2H9_s030_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K2Rb2B2H9_s030_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K2Rb2B2H9_s030_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K2Rb2B2H9_s030_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K2Rb2B2H9_s030_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K2Rb2B2H9_s030_SPG-156_E-hull_-0.016/plots/K2Rb2B2H9_s030_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K2Rb2B2H9_s030_SPG-156_E-hull_-0.016/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K3Rb3B1H8_s013_SPG-38_E-hull_-0.018</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.018 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.517100 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K3Rb3B1H8_s013_SPG-38_E-hull_-0.018/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K3Rb3B1H8_s013_SPG-38_E-hull_-0.018/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K3Rb3B1H8_s013_SPG-38_E-hull_-0.018/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K3Rb3B1H8_s013_SPG-38_E-hull_-0.018/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K3Rb3B1H8_s013_SPG-38_E-hull_-0.018/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K3Rb3B1H8_s013_SPG-38_E-hull_-0.018/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K3Rb3B1H8_s013_SPG-38_E-hull_-0.018/plots/K3Rb3B1H8_s013_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K3Rb3B1H8_s013_SPG-38_E-hull_-0.018/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K5Be1B1H9_s028_SPG-38_E-hull_-0.050</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.050 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.057952 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K5Be1B1H9_s028_SPG-38_E-hull_-0.050/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K5Be1B1H9_s028_SPG-38_E-hull_-0.050/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K5Be1B1H9_s028_SPG-38_E-hull_-0.050/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K5Be1B1H9_s028_SPG-38_E-hull_-0.050/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K5Be1B1H9_s028_SPG-38_E-hull_-0.050/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K5Be1B1H9_s028_SPG-38_E-hull_-0.050/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K5Be1B1H9_s028_SPG-38_E-hull_-0.050/plots/K5Be1B1H9_s028_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K5Be1B1H9_s028_SPG-38_E-hull_-0.050/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>K5Cs2B1H9_s023_SPG-38_E-hull_-0.011</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.011 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.606198 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="K5Cs2B1H9_s023_SPG-38_E-hull_-0.011/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="K5Cs2B1H9_s023_SPG-38_E-hull_-0.011/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="K5Cs2B1H9_s023_SPG-38_E-hull_-0.011/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="K5Cs2B1H9_s023_SPG-38_E-hull_-0.011/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="K5Cs2B1H9_s023_SPG-38_E-hull_-0.011/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="K5Cs2B1H9_s023_SPG-38_E-hull_-0.011/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="K5Cs2B1H9_s023_SPG-38_E-hull_-0.011/plots/K5Cs2B1H9_s023_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="K5Cs2B1H9_s023_SPG-38_E-hull_-0.011/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.029 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.018195 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029/plots/Li1Cs6B1H9_s027_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Li1Cs6B1H9_s027_SPG-38_E-hull_-0.029/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.007 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.827119 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007/plots/Li2Cs3B1H7_s018_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Li2Cs3B1H7_s018_SPG-160_E-hull_-0.007/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.000 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.973798 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000/plots/Li2Rb5B1H9_s004_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Li2Rb5B1H9_s004_SPG-38_E-hull_-0.000/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1Cs2B1H5_s002_SPG-160_E-hull_-0.004</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.004 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>Missing</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1Cs2B1H5_s002_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1Cs2B1H5_s002_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1Cs2B1H5_s002_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1Cs2B1H5_s002_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1Cs2B1H5_s002_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1Cs2B1H5_s002_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1Cs2B1H5_s002_SPG-160_E-hull_-0.004/plots/Na1Cs2B1H5_s002_band_dos.png" alt="Band DOS"></figure>
+      <figure class="missing"><figcaption>Phonon Band DOS</figcaption><div class="missing-box">Missing phonon_band_dos.png in plots/</div></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.004 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-2.573821 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004/plots/Na1Cs3B2H9_s010_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na1Cs3B2H9_s010_SPG-160_E-hull_-0.004/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.017 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.521184 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017/plots/Na1Cs4B2H10_s009_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na1Cs4B2H10_s009_SPG-38_E-hull_-0.017/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.028 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.007667 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028/plots/Na1Cs6B1H9_s009_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na1Cs6B1H9_s009_SPG-38_E-hull_-0.028/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1K3B3H12_s019_SPG-38_E-hull_-0.005</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.005 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.305384 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1K3B3H12_s019_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1K3B3H12_s019_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1K3B3H12_s019_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1K3B3H12_s019_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1K3B3H12_s019_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1K3B3H12_s019_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1K3B3H12_s019_SPG-38_E-hull_-0.005/plots/Na1K3B3H12_s019_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na1K3B3H12_s019_SPG-38_E-hull_-0.005/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1K5B1H8_s011_SPG-44_E-hull_-0.009</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>44</dd></div>
+        <div><dt>E above hull</dt><dd>-0.009 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-2.664981 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1K5B1H8_s011_SPG-44_E-hull_-0.009/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1K5B1H8_s011_SPG-44_E-hull_-0.009/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1K5B1H8_s011_SPG-44_E-hull_-0.009/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1K5B1H8_s011_SPG-44_E-hull_-0.009/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1K5B1H8_s011_SPG-44_E-hull_-0.009/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1K5B1H8_s011_SPG-44_E-hull_-0.009/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1K5B1H8_s011_SPG-44_E-hull_-0.009/plots/Na1K5B1H8_s011_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na1K5B1H8_s011_SPG-44_E-hull_-0.009/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.008 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-8.174776 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008/plots/Na1Rb2B1H5_s007_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na1Rb2B1H5_s007_SPG-160_E-hull_-0.008/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>36</dd></div>
+        <div><dt>E above hull</dt><dd>-0.001 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.127119 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001/plots/Na1Rb2B1H5_s024_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na1Rb2B1H5_s024_SPG-36_E-hull_-0.001/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.013 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.143632 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013/plots/Na1Rb3B3H12_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na1Rb3B3H12_s001_SPG-38_E-hull_-0.013/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>82</dd></div>
+        <div><dt>E above hull</dt><dd>-0.027 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-4.686428 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027/plots/Na2Cs1B2H8_s007_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na2Cs1B2H8_s007_SPG-82_E-hull_-0.027/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na2K2B3H12_s004_SPG-38_E-hull_-0.005</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.005 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.882254 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na2K2B3H12_s004_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na2K2B3H12_s004_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na2K2B3H12_s004_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na2K2B3H12_s004_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na2K2B3H12_s004_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na2K2B3H12_s004_SPG-38_E-hull_-0.005/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Na2K2B3H12_s004_SPG-38_E-hull_-0.005/plots/Na2K2B3H12_s004_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na2K2B3H12_s004_SPG-38_E-hull_-0.005/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na2Rb2B1H6_s010_SPG-38_E-hull_-0.004</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.004 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-3.525076 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na2Rb2B1H6_s010_SPG-38_E-hull_-0.004/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na2Rb2B1H6_s010_SPG-38_E-hull_-0.004/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na2Rb2B1H6_s010_SPG-38_E-hull_-0.004/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na2Rb2B1H6_s010_SPG-38_E-hull_-0.004/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na2Rb2B1H6_s010_SPG-38_E-hull_-0.004/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na2Rb2B1H6_s010_SPG-38_E-hull_-0.004/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure class="missing"><figcaption>Band DOS</figcaption><div class="missing-box">Missing band_dos image in plots/</div></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na2Rb2B1H6_s010_SPG-38_E-hull_-0.004/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Na2Rb2B3H12_s018_SPG-38_E-hull_-0.014</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.014 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.613695 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Na2Rb2B3H12_s018_SPG-38_E-hull_-0.014/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Na2Rb2B3H12_s018_SPG-38_E-hull_-0.014/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Na2Rb2B3H12_s018_SPG-38_E-hull_-0.014/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Na2Rb2B3H12_s018_SPG-38_E-hull_-0.014/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Na2Rb2B3H12_s018_SPG-38_E-hull_-0.014/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Na2Rb2B3H12_s018_SPG-38_E-hull_-0.014/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure class="missing"><figcaption>Band DOS</figcaption><div class="missing-box">Missing band_dos image in plots/</div></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Na2Rb2B3H12_s018_SPG-38_E-hull_-0.014/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.015 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.000000 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015/plots/Rb1Cs1B1H4_s002_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb1Cs1B1H4_s002_SPG-160_E-hull_-0.015/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>36</dd></div>
+        <div><dt>E above hull</dt><dd>-0.018 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.136507 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018/plots/Rb1Cs1B1H4_s017_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb1Cs1B1H4_s017_SPG-36_E-hull_-0.018/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>164</dd></div>
+        <div><dt>E above hull</dt><dd>-0.016 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-1.919508 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016/plots/Rb1Cs2B2H8_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb1Cs2B2H8_s001_SPG-164_E-hull_-0.016/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.029 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.160647 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029/plots/Rb1Cs3B2H9_s013_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb1Cs3B2H9_s013_SPG-156_E-hull_-0.029/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb1Cs3B2H9_s014_SPG-160_E-hull_-0.010</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.010 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>Missing</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb1Cs3B2H9_s014_SPG-160_E-hull_-0.010/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb1Cs3B2H9_s014_SPG-160_E-hull_-0.010/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb1Cs3B2H9_s014_SPG-160_E-hull_-0.010/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb1Cs3B2H9_s014_SPG-160_E-hull_-0.010/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb1Cs3B2H9_s014_SPG-160_E-hull_-0.010/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb1Cs3B2H9_s014_SPG-160_E-hull_-0.010/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure class="missing"><figcaption>Band DOS</figcaption><div class="missing-box">Missing band_dos image in plots/</div></figure>
+      <figure class="missing"><figcaption>Phonon Band DOS</figcaption><div class="missing-box">Missing phonon_band_dos.png in plots/</div></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb1K2B1H5_s009_SPG-160_E-hull_-0.021</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.021 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.114109 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb1K2B1H5_s009_SPG-160_E-hull_-0.021/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb1K2B1H5_s009_SPG-160_E-hull_-0.021/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb1K2B1H5_s009_SPG-160_E-hull_-0.021/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb1K2B1H5_s009_SPG-160_E-hull_-0.021/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb1K2B1H5_s009_SPG-160_E-hull_-0.021/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb1K2B1H5_s009_SPG-160_E-hull_-0.021/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb1K2B1H5_s009_SPG-160_E-hull_-0.021/plots/Rb1K2B1H5_s009_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb1K2B1H5_s009_SPG-160_E-hull_-0.021/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb1K2B1H5_s011_SPG-38_E-hull_-0.015</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.015 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.938846 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb1K2B1H5_s011_SPG-38_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb1K2B1H5_s011_SPG-38_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb1K2B1H5_s011_SPG-38_E-hull_-0.015/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb1K2B1H5_s011_SPG-38_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb1K2B1H5_s011_SPG-38_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb1K2B1H5_s011_SPG-38_E-hull_-0.015/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb1K2B1H5_s011_SPG-38_E-hull_-0.015/plots/Rb1K2B1H5_s011_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb1K2B1H5_s011_SPG-38_E-hull_-0.015/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb1K3B3H12_s026_SPG-160_E-hull_-0.004</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>160</dd></div>
+        <div><dt>E above hull</dt><dd>-0.004 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>Missing</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb1K3B3H12_s026_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb1K3B3H12_s026_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb1K3B3H12_s026_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb1K3B3H12_s026_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb1K3B3H12_s026_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb1K3B3H12_s026_SPG-160_E-hull_-0.004/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure class="missing"><figcaption>Band DOS</figcaption><div class="missing-box">Missing band_dos image in plots/</div></figure>
+      <figure class="missing"><figcaption>Phonon Band DOS</figcaption><div class="missing-box">Missing phonon_band_dos.png in plots/</div></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>164</dd></div>
+        <div><dt>E above hull</dt><dd>-0.028 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.000001 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028/plots/Rb2Cs1B2H8_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb2Cs1B2H8_s001_SPG-164_E-hull_-0.028/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.012 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.000001 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012/plots/Rb2Cs1B2H8_s002_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb2Cs1B2H8_s002_SPG-156_E-hull_-0.012/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.020 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.867779 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020/plots/Rb2Cs2B2H9_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb2Cs2B2H9_s001_SPG-156_E-hull_-0.020/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb2K2B2H9_s001_SPG-156_E-hull_-0.017</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.017 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.568704 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb2K2B2H9_s001_SPG-156_E-hull_-0.017/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb2K2B2H9_s001_SPG-156_E-hull_-0.017/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb2K2B2H9_s001_SPG-156_E-hull_-0.017/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb2K2B2H9_s001_SPG-156_E-hull_-0.017/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb2K2B2H9_s001_SPG-156_E-hull_-0.017/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb2K2B2H9_s001_SPG-156_E-hull_-0.017/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb2K2B2H9_s001_SPG-156_E-hull_-0.017/plots/Rb2K2B2H9_s001_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb2K2B2H9_s001_SPG-156_E-hull_-0.017/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb2K2B2H9_s013_SPG-156_E-hull_-0.016</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.016 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.077571 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb2K2B2H9_s013_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb2K2B2H9_s013_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb2K2B2H9_s013_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb2K2B2H9_s013_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb2K2B2H9_s013_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb2K2B2H9_s013_SPG-156_E-hull_-0.016/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb2K2B2H9_s013_SPG-156_E-hull_-0.016/plots/Rb2K2B2H9_s013_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb2K2B2H9_s013_SPG-156_E-hull_-0.016/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb2K2B2H9_s014_SPG-156_E-hull_-0.006</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.006 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.032192 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb2K2B2H9_s014_SPG-156_E-hull_-0.006/PARCHG/vesta_imgs_band0_2x2x2/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb2K2B2H9_s014_SPG-156_E-hull_-0.006/PARCHG/vesta_imgs_band0_2x2x2/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb2K2B2H9_s014_SPG-156_E-hull_-0.006/PARCHG/vesta_imgs_band0_2x2x2/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb2K2B2H9_s014_SPG-156_E-hull_-0.006/PARCHG/vesta_imgs_band1_2x2x2/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb2K2B2H9_s014_SPG-156_E-hull_-0.006/PARCHG/vesta_imgs_band1_2x2x2/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb2K2B2H9_s014_SPG-156_E-hull_-0.006/PARCHG/vesta_imgs_band1_2x2x2/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb2K2B2H9_s014_SPG-156_E-hull_-0.006/plots/Rb2K2B2H9_s014_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb2K2B2H9_s014_SPG-156_E-hull_-0.006/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb3K1B2H9_s024_SPG-156_E-hull_-0.019</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>156</dd></div>
+        <div><dt>E above hull</dt><dd>-0.019 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.500899 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb3K1B2H9_s024_SPG-156_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb3K1B2H9_s024_SPG-156_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb3K1B2H9_s024_SPG-156_E-hull_-0.019/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb3K1B2H9_s024_SPG-156_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb3K1B2H9_s024_SPG-156_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb3K1B2H9_s024_SPG-156_E-hull_-0.019/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb3K1B2H9_s024_SPG-156_E-hull_-0.019/plots/Rb3K1B2H9_s024_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb3K1B2H9_s024_SPG-156_E-hull_-0.019/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb4K2B1H8_s003_SPG-38_E-hull_-0.020</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.020 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.273720 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb4K2B1H8_s003_SPG-38_E-hull_-0.020/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb4K2B1H8_s003_SPG-38_E-hull_-0.020/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb4K2B1H8_s003_SPG-38_E-hull_-0.020/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb4K2B1H8_s003_SPG-38_E-hull_-0.020/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb4K2B1H8_s003_SPG-38_E-hull_-0.020/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb4K2B1H8_s003_SPG-38_E-hull_-0.020/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb4K2B1H8_s003_SPG-38_E-hull_-0.020/plots/Rb4K2B1H8_s003_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb4K2B1H8_s003_SPG-38_E-hull_-0.020/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.060 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.021714 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060/plots/Rb5Be1B1H9_s021_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb5Be1B1H9_s021_SPG-38_E-hull_-0.060/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="structure">
+  <h2>Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009</h2>
+  <div class="structure-meta">
+    
+      <dl class="meta-list">
+        <div><dt>SPG</dt><dd>38</dd></div>
+        <div><dt>E above hull</dt><dd>-0.009 eV/atom</dd></div>
+        <div><dt>Min phonon freq</dt><dd>-0.019735 THz</dd></div>
+      </dl>
+  </div>
+  <div class="layout">
+    <div class="left-panel">
+      <h3>Band Charge Density</h3>
+      <div class="grid">
+        <figure><figcaption>Band0 along a</figcaption><img src="Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009/PARCHG/vesta_imgs_band0/along_a.png" alt="Band0 along a"></figure>
+        <figure><figcaption>Band0 along b</figcaption><img src="Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009/PARCHG/vesta_imgs_band0/along_b.png" alt="Band0 along b"></figure>
+        <figure><figcaption>Band0 along c</figcaption><img src="Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009/PARCHG/vesta_imgs_band0/along_c.png" alt="Band0 along c"></figure>
+        <figure><figcaption>Band1 along a</figcaption><img src="Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009/PARCHG/vesta_imgs_band1/along_a.png" alt="Band1 along a"></figure>
+        <figure><figcaption>Band1 along b</figcaption><img src="Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009/PARCHG/vesta_imgs_band1/along_b.png" alt="Band1 along b"></figure>
+        <figure><figcaption>Band1 along c</figcaption><img src="Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009/PARCHG/vesta_imgs_band1/along_c.png" alt="Band1 along c"></figure>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>Electronic + Phonon</h3>
+      <figure><figcaption>Band DOS</figcaption><img src="Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009/plots/Rb6Li1B1H9_s006_band_dos.png" alt="Band DOS"></figure>
+      <figure><figcaption>Phonon Band DOS</figcaption><img src="Rb6Li1B1H9_s006_SPG-38_E-hull_-0.009/plots/phonon_band_dos.png" alt="Phonon Band DOS"></figure>
+    </div>
+  </div>
+</section>
+
+  </main>
+</body>
+</html>
